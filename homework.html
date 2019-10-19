@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二级菜单显示与隐藏</title>
+    <style>
+        .list {
+            width: 200px;
+            height: 270px;
+            background-color: black;
+            text-align: center;
+
+            position: relative;
+            bottom: 0px;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            padding: 10px;
+            border-bottom: 1px dotted lightgray;
+        }
+        li:last-child{
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        ol{
+            width: 200px;
+            background-color: gray;
+            text-align: center;
+
+            list-style: none;
+            padding: 0;
+        }
+        #list1{
+            position: relative;
+        }
+        #list1-1{
+            display: none;
+            height: 270px;
+            position: absolute;
+            left: 200px;
+            top: 0px;
+        }
+        #list1:hover>#list1-1{
+            display: block;
+        }
+        #list2{
+            position: relative;
+        }
+        #list2-1{
+            display: none;
+            height: 270px;
+            position: absolute;
+            left: 200px;
+            top: 0px;
+        }
+        #list2:hover>#list2-1{
+            display: block;
+        }
+        #list3{
+            position: relative;
+        }
+        #list3-1{
+            display: none;
+            height: 180px;
+            position: absolute;
+            left: 200px;
+            top: 0px;
+        }
+        #list3:hover>#list3-1{
+            display: block;
+        }
+        #list4{
+            position: relative;
+        }
+        #list4-1{
+            display: none;
+            height: 135px;
+            position: absolute;
+            left: 200px;
+            top: 0px;
+        }
+        #list4:hover>#list4-1{
+            display: block;
+        }
+        #list5{
+            position: relative;
+        }
+        #list5-1{
+            display: none;
+            height: 405px;
+            position: absolute;
+            left: 200px;
+            top: 0px;
+        }
+        #list5:hover>#list5-1{
+            display: block;
+        }
+        #list6{
+            position: relative;
+        }
+        #list6-1{
+            display: none;
+            height: 225px;
+            position: absolute;
+            left: 200px;
+            top: 0px;
+        }
+        #list6:hover>#list6-1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li id=list1>
+                <a href="#">前端开发</a>
+                <ol id=list1-1>
+                    <li><a href="#">HTML/CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Vue.js</a></li>
+                    <li><a href="#">ReactJS</a></li>
+                    <li><a href="#">小程序</a></li>
+                    <li><a href="#">Node.js</a></li>
+                </ol>
+            </li>
+            <li id="list2">
+                <a href="#">后端开发</a>
+                <ol id=list2-1>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">SpringBoot</a></li>
+                        <li><a href="#">Spring Cloud</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">爬虫</a></li>
+                        <li><a href="#">PHP</a></li>
+                    </ol>
+            </li>
+            <li id="list3">
+                <a href="#">移动开发</a>
+                <ol id=list3-1>
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">iOS</a></li>
+                        <li><a href="#">React native</a></li>
+                        <li><a href="#">WEEX</a></li>
+                    </ol>
+            </li>
+            <li id="list4">
+                <a href="#">算法/数学</a>
+                <ol id=list4-1>
+                        <li><a href="#">算法与数据结构</a></li>
+                        <li><a href="#">数学</a></li>
+                        <li><a href="#">算法</a></li>
+                    </ol>
+            </li>
+            <li id="list5">
+                <a href="#">前沿技术</a>
+                <ol id=list5-1>
+                        <li><a href="#">微服务</a></li>
+                        <li><a href="#">区块链</a></li>
+                        <li><a href="#">以太坊</a></li>
+                        <li><a href="#">人工智能</a></li>
+                        <li><a href="#">机器学习</a></li>
+                        <li><a href="#">深度学习</a></li>
+                        <li><a href="#">计算机视觉</a></li>
+                        <li><a href="#">自然语言处理</a></li>
+                        <li><a href="#">数据分析/挖掘</a></li>
+                    </ol>
+            </li>
+            <li id="list6">
+                <a href="#">运维/测试</a>
+                <ol id=list6-1>
+                        <li><a href="#">运维</a></li>
+                        <li><a href="#">自动化运维</a></li>
+                        <li><a href="#">运维工具</a></li>
+                        <li><a href="#">中间件</a></li>
+                        <li><a href="#">Linux</a></li>
+                    </ol>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
